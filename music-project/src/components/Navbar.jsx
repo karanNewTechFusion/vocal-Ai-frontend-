@@ -42,14 +42,14 @@ export default function Navbar() {
             aria-label="Open menu"
           >
             <span className={`block w-6 h-0.5 bg-accent-pink mb-1 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-            <span className={`block w-6 h-0.5 bg-accent-blue mb-1 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block w-6 h-0.5 bg-accent-blue mb-1 transition-all duration-300 ${menuOpen ? '' : ''}`}></span>
             <span className={`block w-6 h-0.5 bg-accent-purple transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </button>
         </div>
         {/* Mobile Dropdown */}
         {menuOpen && (
           <div className="fixed inset-0 top-16 bg-dark/90 z-40 flex flex-col items-center justify-start pt-12 animate-fade-in">
-            <div className="bg-white/20 backdrop-blur-xl max-w-xs w-full mx-auto rounded-2xl shadow-2xl p-6 flex flex-col items-center space-y-4">
+            <div className="bg-dark backdrop-blur-xl max-w-xs w-full mx-auto rounded-2xl shadow-2xl p-6 flex flex-col items-center space-y-4">
               {navLinks.map(link => (
                 <a
                   key={link.name}
