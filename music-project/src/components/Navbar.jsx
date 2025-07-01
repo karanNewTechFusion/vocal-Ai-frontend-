@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Mobile Dropdown */}
         {menuOpen && (
           <div className="fixed inset-0 top-16 bg-dark/90 z-40 flex flex-col items-center justify-start pt-12 animate-fade-in">
-            <div className="bg-dark backdrop-blur-xl max-w-xs w-full mx-auto rounded-2xl shadow-2xl p-6 flex flex-col items-center space-y-4">
+            <div className=" backdrop-blur-xl max-w-xs w-full mx-auto rounded-2xl shadow-2xl p-6 flex flex-col items-center space-y-4">
               {navLinks.map(link => (
                 <a
                   key={link.name}
